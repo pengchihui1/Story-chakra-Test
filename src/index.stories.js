@@ -11,10 +11,11 @@ import {
   AlertTitle,
   AlertDescription
 } from '@chakra-ui/core'
-export default { title: 'Button' }
+export default { title: 'Index' }
 
 export const withText = () => <Button>Hello Button</Button>
 
+//一个笑脸
 export const withEmoji = () => (
   <Button>
     <span role='img' aria-label='so cool'>
@@ -22,6 +23,7 @@ export const withEmoji = () => (
     </span>
   </Button>
 )
+//测试一个笑脸
 export const Headings = () => {
   return (
     <ThemeProvider>
@@ -31,6 +33,7 @@ export const Headings = () => {
     </ThemeProvider>
   )
 }
+//选项按钮
 export const Checkboxs = () => {
   return (
     <ThemeProvider>
@@ -80,6 +83,7 @@ export const Accordions = () => {
     </ThemeProvider>
   )
 }
+//常见五个按钮
 export const Alerts = () => {
   return (
     <ThemeProvider>
