@@ -9,7 +9,8 @@ import {
   Alert,
   AlertIcon,
   AlertTitle,
-  AlertDescription
+  AlertDescription,
+
 } from '@chakra-ui/core'
 export default { title: 'Index' }
 

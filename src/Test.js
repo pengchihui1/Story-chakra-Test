@@ -344,21 +344,24 @@ export const MingEditable=()=>{
 	)
 }
 export const MingFlex=()=>{
-	 const [value, setValue] = React.useState("Hello world");
-     const { onCopy, hasCopied } = useClipboard(value);
 	return(
 	 <ThemeProvider>
 	 <>
-	  <Flex mb={2}>
-        <Input value={value} isReadOnly placeholder="Welcome" />
-        <Button onClick={onCopy} ml={2}>
-          {hasCopied ? "Copied" : "Copy"}
-        </Button>
-      </Flex>
-      <Editable placeholder="Paste here">
-        <EditablePreview w="100%" />
-        <EditableInput />
-      </Editable>
+		 <Flex align="center">
+			 <Flex bg="green.50" align="flex-end">
+				 <Text>Box 1</Text>
+			 </Flex>
+			 <Flex bg="blue.50" size="150px" align="center" justify="center">
+				 <Text textAlign="center" bg="pink.50">
+					 Box 2
+				 </Text>
+			 </Flex>
+			 <Box>
+				 <Text bg="tomato" color="white">
+					 Box 3
+				 </Text>
+			 </Box>
+		 </Flex>
 	  </>
 	 </ThemeProvider>
 	)
